@@ -1,0 +1,171 @@
+	/* reset styles */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+
+
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 0; border-left: 0; list-style: decimal; }
+ul { padding-left: 0; border-left:0;list-style:none; }
+q:before, q:after { content:''; }
+
+/* end reset styles */
+
+/*Estilos del contenedor Body */
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 62.5%;
+	background-image: url("../img/bigo.jpg");
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	position: relative;
+	flex-direction: column;
+	
+}
+
+
+/*Estilos para el header */
+
+.flex-container-header {
+	position: fixed;
+	opacity: 0.9;
+	background: #7B1FA2;
+	display: flex;
+	align-items: center;
+	height: 120px;
+	align-items: center;
+	padding-left:2%;
+	width: 100%;
+	top:7.8%;
+
+}
+
+
+h1 {
+	position: absolute;
+	left:30%;
+	color:black;
+	font-size: 6em;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+
+
+
+
+.bottom span {
+		font-size: 2.5em;	
+}
+
+
+.flex-item-logo {
+	margin-left: 2%;
+	margin-top: 3%;
+	padding-top: 3%;
+	background-color:#7B1FA2;
+	width:240px;
+	height:220px;
+	border-radius: 72%;
+	margin-right: auto;
+}
+
+
+
+ul {
+	color:white;
+	display: flex;
+	margin-bottom: .5em;
+	margin-right: .5em;
+}
+
+
+
+ul li {
+	background-color: #FFC107;
+	background-repeat: no-repeat;
+	background-position: center;
+	color:#333;
+	border-radius: 72%;
+	margin-left: 10px;
+	font-size: 1.8em;
+	margin-right: 10px;
+	padding: 0..5em;
+	width:80px;
+	height:80px;
+	text-align: center;
+	color:white;
+	padding-bottom:2%;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 10;
+		
+}
+
+
+li.icon1 {
+	background-image: url(../img/lobo.svg);
+	background-size: 80px;
+}
+
+li.icon2 {
+	background-image:url(../img/gato.svg);
+	background-size: 65px;
+}
+
+
+li.icon3 {
+	background-image: url(../img/perro.svg);
+}
+
+/* Estilos para el contenedor de la presentación*/
+
+.flex-container-presentacion {
+	position: relative;
+	top:180px;
+	font-size: 4em;	
+	padding-right: 10px;
+	width: 50%;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1.2;
+	line-height: 200%;
+	text-align: center;
+	
+}
+
+
+ .bottom {
+		position: absolute;
+		bottom: -200px;
+	}
+
+
+.bottom span {
+	  font-size: 1.5em;				
+	  animation: blink 2s infinite;
+	}
+@keyframes blink{
+  to{opacity: .1;}
+}		
+
+
+#contenedorGeneral {
+	position:relative;
+	font-size: 2em;
+	width: 100%;
+	border: 1px solid red;
+	top: 340px;
+	display: none;
+	
+}
